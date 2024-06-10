@@ -14,5 +14,5 @@ st.write("The project is realized as part of the outgoing mobility scholarship o
 st.write("[HRZZ link](https://hrzz.hr/financiranje/baza-projekata/?ID=15753#baza)")
 
 #---load assets---
-img=Image.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Images/Layout_1.png")
+img=Image.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Images/Layout_1.PNG")
 st.image(img)
