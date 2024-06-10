@@ -10,9 +10,9 @@ st.title("QSCT-3D-ADRIA - site is under construction")
 st.sidebar.success("Select a page above.")
 
 #---load assets---
-img=Image.open("C:\\Users\\drukavina\\Documents\\QSCT-3D-ADRIA\\Website\\Images\\Layout_1.png")
-img2=Image.open("C:\\Users\\drukavina\\Documents\\QSCT-3D-ADRIA\\Website\\Images\\RGNf samologo.jpg")
-img3=Image.open("C:\\Users\\drukavina\\Documents\\QSCT-3D-ADRIA\\Website\\Images\\HRZZ-eng.jpg")
+img=Image.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Images/Layout_1.png")
+img2=Image.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Images/RGNf samologo.jpg")
+img3=Image.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Images/HRZZ-eng.jpg")
 
 
 #---HRZZ research project---
