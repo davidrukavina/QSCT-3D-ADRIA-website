@@ -4,8 +4,8 @@ import streamlit as st
 st.title("Contact")
 
 #---load assets---
-img2=Image.open("C:\\Users\\drukavina\\Documents\\QSCT-3D-ADRIA\\Website\\Images\\RGNf samologo.jpg")
-img3=Image.open("C:\\Users\\drukavina\\Documents\\QSCT-3D-ADRIA\\Website\\Images\\UniZg.png")
+img2=Image.open("Images\\RGNf samologo.jpg")
+img3=Image.open("Images\\UniZg.png")
 
 #---contact info---
 st.write("david.rukavina@rgn.unizg.hr")
