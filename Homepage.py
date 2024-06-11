@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from PIL import Image
 import streamlit as st
 
@@ -9,10 +11,17 @@ st.set_page_config(
 st.title("QSCT-3D-ADRIA - site is under construction")
 st.sidebar.success("Select a page above.")
 
+if "Homepage.py" in locals():
+    current_dir = Path("Homepage.py").parent
+else:
+    current_dir = Path.cwd()
+
+
+
 #---load assets---
-img=Image.open("Images/Layout_1.PNG")
-img2=Image.open("Images/RGNf samologo.jpg")
-img3=Image.open("Images/HRZZ-eng.jpg")
+img=Image.open(current_dir /"Images" / "Layout_1.PNG")
+img2=Image.open(current_dir /"Images"/"RGNf samologo.jpg")
+img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 
 
 #---HRZZ research project---
