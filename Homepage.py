@@ -12,8 +12,8 @@ st.set_page_config(
 st.title("QSCT-3D-ADRIA - site is under construction")
 st.sidebar.success("Select a page above.")
 
-if "Homepage.py" in locals():
-    current_dir = Path("Homepage.py").parent
+if "homepage.py" in locals():
+    current_dir = Path("homepage.py").parent
 else:
     current_dir = Path.cwd()
 
