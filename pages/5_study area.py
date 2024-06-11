@@ -1,6 +1,7 @@
 from pathlib import Path
 from PIL import Image
 import streamlit as st
+import webbrowser
 
 st.title("Adriatic foreland basin")
 
@@ -13,5 +14,7 @@ if "homepage.py" in locals():
 else:
     current_dir = Path.cwd()
 
-st.write("qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html#6/42.737/16.401")
+
+
+webbrowser.open_new_tab("index.html")
 
