@@ -3,6 +3,7 @@ import os
 from PIL import Image
 import streamlit as st
 
+
 st.set_page_config(
     page_title="Multipage App",
     page_icon=":)"
@@ -16,7 +17,6 @@ if "Homepage.py" in locals():
 else:
     current_dir = Path.cwd()
 
-print(os.listdir("."))
 
 #---load assets---
 img=Image.open(current_dir /"Images" / "Layout_1.png")
