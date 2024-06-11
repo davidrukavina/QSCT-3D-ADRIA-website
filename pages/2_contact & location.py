@@ -1,11 +1,17 @@
+from pathlib import Path
 from PIL import Image
 import streamlit as st
 
 st.title("Contact")
 
+if "homepage.py" in locals():
+    current_dir = Path("homepage.py").parent
+else:
+    current_dir = Path.cwd()
+
 #---load assets---
-img2=Image.open("Images\\RGNf samologo.jpg")
-img3=Image.open("Images\\UniZg.png")
+img2=Image.open(current_dir /"Images"/"RGNf samologo.jpg")
+img3=Image.open(current_dir/"Images"/"UniZg.png")
 
 #---contact info---
 st.write("david.rukavina@rgn.unizg.hr")

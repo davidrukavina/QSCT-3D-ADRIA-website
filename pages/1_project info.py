@@ -1,3 +1,4 @@
+from pathlib import Path
 from PIL import Image
 import streamlit as st
 
@@ -19,5 +20,5 @@ else:
     current_dir = Path.cwd()
 
 #---load assets---
-img=Image.open("Images/Layout_1.PNG")
+img=Image.open(current_dir /"Images" / "Layout_1.png")
 st.image(img)
