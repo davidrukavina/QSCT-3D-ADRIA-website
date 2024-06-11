@@ -19,7 +19,7 @@ else:
 print(os.listdir("."))
 
 #---load assets---
-img=Image.open(current_dir /"Images" / "Layout_1.PNG")
+img=Image.open(current_dir /"Images" / "Layout_1.png")
 img2=Image.open(current_dir /"Images"/"RGNf samologo.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 
