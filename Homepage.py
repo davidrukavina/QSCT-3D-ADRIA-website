@@ -19,7 +19,7 @@ else:
 
 
 #---load assets---
-img=Image.open(current_dir /"Images" / "Layout_1.png")
+img=Image.open(current_dir /"Images" / "Layout_2.jpg")
 img2=Image.open(current_dir /"Images"/"RGNf samologo.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 

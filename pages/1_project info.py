@@ -20,5 +20,5 @@ else:
     current_dir = Path.cwd()
 
 #---load assets---
-img=Image.open(current_dir /"Images" / "Layout_1.png")
+img=Image.open(current_dir /"Images" / "Layout_2.jpg")
 st.image(img)
