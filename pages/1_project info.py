@@ -13,6 +13,11 @@ st.write("#")
 st.write("The project is realized as part of the outgoing mobility scholarship of the Croatian Science Foundation (HRZZ), financially supported by the NextGenerationEU program.")
 st.write("[HRZZ link](https://hrzz.hr/financiranje/baza-projekata/?ID=15753#baza)")
 
+if "homepage.py" in locals():
+    current_dir = Path("homepage.py").parent
+else:
+    current_dir = Path.cwd()
+
 #---load assets---
 img=Image.open("Images/Layout_1.PNG")
 st.image(img)
