@@ -16,7 +16,7 @@ if "Homepage.py" in locals():
 else:
     current_dir = Path.cwd()
 
-print(os.listdir())
+print(os.listdir("."))
 
 #---load assets---
 img=Image.open(current_dir /"Images" / "Layout_1.PNG")
