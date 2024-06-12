@@ -3,6 +3,7 @@ from PIL import Image
 import streamlit as st
 import webbrowser
 import requests
+from bs4 import BeautifulSoup
 
 
 
@@ -24,6 +25,12 @@ url = "https://raw.githubusercontent.com/davidrukavina/QSCT-3D-ADRIA-website/mas
 response = requests.get(url)
 response.raise_for_status() # Raise an error if the request fails
 
+# Step 3: Parse the HTML content (if needed)
+html_content = response.text
+soup = BeautifulSoup(html_content, "html.parser")
+
+# Soup 4: Print or process the HTML
+print(soup.prettify()) # Print formatted HTML
 
 
 
