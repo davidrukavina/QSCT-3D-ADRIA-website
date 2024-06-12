@@ -2,6 +2,9 @@ from pathlib import Path
 from PIL import Image
 import streamlit as st
 import webbrowser
+import requests
+from bs4 import BeautifulSoup
+
 
 st.title("Adriatic foreland basin")
 
@@ -14,6 +17,13 @@ if "homepage.py" in locals():
 else:
     current_dir = Path.cwd()
 
+# Step 1: Define the URL of the raw HTML file
+url = "https://raw.githubusercontent.com/davidrukavina/QSCT-3D-ADRIA-website/master/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html"
 
-st.write("https://github.com/davidrukavina/QSCT-3D-ADRIA-website/blob/master/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html#7/44.351/15.886")
+# Step 2: Fetch the content from the URL
+response = requests.get(url)
+response.raise_for_status() # Raise an error if the request fails
+
+
+
 
