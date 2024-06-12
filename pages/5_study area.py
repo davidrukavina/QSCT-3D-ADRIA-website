@@ -3,10 +3,6 @@ from PIL import Image
 import streamlit as st
 import webbrowser
 import requests
-from lxml import etree
-
-
-
 
 
 
@@ -26,8 +22,8 @@ response = requests.get(url)
 response.raise_for_status() # Raise an error if the request fails
 
 html_content = response.text
-tree = etree.HTML(html_content)
-title = tree.xpath("//title/text/()")
-print(title[0] if title else "No title found")
+
+
+print(html_content)
 
 
