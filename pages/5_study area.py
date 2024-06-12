@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 import webbrowser
 import requests
-from bs4 import BeautifulSoup
+from lxml import etree
 
 
 
@@ -25,12 +25,9 @@ url = "https://raw.githubusercontent.com/davidrukavina/QSCT-3D-ADRIA-website/mas
 response = requests.get(url)
 response.raise_for_status() # Raise an error if the request fails
 
-# Step 3: Parse the HTML content (if needed)
 html_content = response.text
-soup = BeautifulSoup(html_content, "html.parser")
-
-# Soup 4: Print or process the HTML
-print(soup.prettify()) # Print formatted HTML
-
+tree = etree.HTML(html_content)
+title = tree.xpath("//title/text/()")
+print(title[0] if title else "No title found")
 
 
