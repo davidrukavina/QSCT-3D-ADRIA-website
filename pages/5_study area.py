@@ -15,5 +15,5 @@ else:
     current_dir = Path.cwd()
 
 
-st.write("https://github.com/davidrukavina/QSCT-3D-ADRIA-website/blob/master/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html")
+st.write("https://github.com/davidrukavina/QSCT-3D-ADRIA-website/blob/master/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html#7/44.351/15.886")
 
