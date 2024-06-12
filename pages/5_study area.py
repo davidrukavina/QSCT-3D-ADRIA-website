@@ -15,6 +15,5 @@ else:
     current_dir = Path.cwd()
 
 
-
-webbrowser.open_new_tab("index.html")
+st.write("qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html")
 
