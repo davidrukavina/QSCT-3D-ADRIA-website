@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 import webbrowser
 import requests
-from bs4 import BeautifulSoup
+
 
 
 st.title("Adriatic foreland basin")
