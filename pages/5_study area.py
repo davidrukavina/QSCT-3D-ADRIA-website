@@ -14,7 +14,7 @@ if "homepage.py" in locals():
     current_dir = Path("homepage.py").parent
 else:
     current_dir = Path.cwd()
-
+"""
 # Step 1: Define the URL of the raw HTML file
 url = "https://raw.githubusercontent.com/davidrukavina/QSCT-3D-ADRIA-website/master/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html"
 
@@ -27,9 +27,16 @@ local_filename = "index.html"
 with open(local_filename, "w", encoding="utf-8") as file:
     file.write(response.text)
 
-local_path = os.path.abspath(local_filename)
+if local_filename in locals():
+    current_dir = Path(local_filename).parent
+else:
+    current_dir = Path.cwd()
+"""
 
-webbrowser.open(f"file://{local_path}")
+
+webbrowser.open(f"file://{current_dir /'qgis2web'/'qgis2web_2024_06_10-17_51_15_151576'/ "index.html"}")
+
+#webbrowser.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html")
     
 
 
