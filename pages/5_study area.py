@@ -4,6 +4,8 @@ import streamlit as st
 import webbrowser
 import requests
 import os
+import streamlit.components.v1 as components
+
 
 st.title("Adraitic foreland basin")
 
@@ -34,7 +36,11 @@ else:
 """
 
 path = current_dir /'qgis2web'/'qgis2web_2024_06_10-17_51_15_151576'/'index.html'
-webbrowser.open(f'file://{path}')
+
+with open (path, 'r') as f:
+    html_data = f.read()
+
+components.html(html_data)
 
 #webbrowser.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html")
     
