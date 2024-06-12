@@ -34,7 +34,7 @@ else:
 """
 
 
-webbrowser.open(f"file://{current_dir /'qgis2web'/'qgis2web_2024_06_10-17_51_15_151576'/ "index.html"}")
+webbrowser.open(f'file://{current_dir /'qgis2web'/'qgis2web_2024_06_10-17_51_15_151576'/ 'index.html'}')
 
 #webbrowser.open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/qgis2web/qgis2web_2024_06_10-17_51_15_151576/index.html")
     
