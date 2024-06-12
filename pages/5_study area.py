@@ -3,6 +3,7 @@ from PIL import Image
 import streamlit as st
 import webbrowser
 import requests
+import os
 
 
 
@@ -21,9 +22,15 @@ url = "https://raw.githubusercontent.com/davidrukavina/QSCT-3D-ADRIA-website/mas
 response = requests.get(url)
 response.raise_for_status() # Raise an error if the request fails
 
-html_content = response.text
+# save the HTML content to a local file
+local_filename = "index.html"
+with open(local_filename, "w", encoding="utf-8") as file:
+    file.write(response.text)
 
+local_path = os.path.abspath(local_filename)
 
-print(html_content)
+webbrowser.open(f"file://{local_path}")
+    
+
 
 
