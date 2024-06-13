@@ -20,7 +20,7 @@ else:
 
 #---load assets---
 img=Image.open(current_dir /"Images" / "Layout_2.jpg")
-img2=Image.open(current_dir /"Images"/"RGNf samologo.jpg")
+img2=Image.open(current_dir /"Images"/"Logo_ETH_UZ_RGN.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 
 
@@ -47,10 +47,9 @@ with image_column:
     st.image(img2)
 
 with text_column: 
-    st.write("University of Zagreb, Faculty of Mining, Geology and Petroleum Engineering")
-    st.write("#")
-    st.write("#")
-    st.write("Geophysical Fluid Dynamics Group, Department of Earth Sciences at ETH Zürich")
+    st.subheader("University of Zagreb, Faculty of Mining, Geology and Petroleum Engineering")
+
+    st.subheader("Geophysical Fluid Dynamics Group, Department of Earth Sciences at ETH Zürich")
 
 
 
