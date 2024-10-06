@@ -22,7 +22,18 @@ else:
 img=Image.open(current_dir /"Images" / "Layout_2.jpg")
 img2=Image.open(current_dir /"Images"/"Logo_ETH_UZ_RGN.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
+img4=Image.open(current_dir/"Images"/"vis geopark.jpg")
 
+
+#---suported by---
+st.write("---")
+st.write("Supported by:")
+image_column, text_column=st.columns((1,2))
+with image_column:
+    st.image(img4)
+
+with text_column:
+    st.write("part of the European and Global UNESCO Geopark Netwoks")
 
 #---HRZZ research project---
 
@@ -52,4 +63,6 @@ with text_column:
     st.subheader("Geophysical Fluid Dynamics Group, Department of Earth Sciences at ETH Zürich")
 
 
+
+    
 
