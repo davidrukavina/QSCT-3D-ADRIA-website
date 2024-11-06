@@ -3,9 +3,12 @@ import os
 from PIL import Image
 import streamlit as st
 import requests
-from google.oauth2 import service_account
-from googleapiclient.discovery import build
+
 import logging
+
+
+
+
 
 
 st.set_page_config(
@@ -68,50 +71,3 @@ with text_column:
 
 
 
-
-# Cloudflare API credentials (replace with your credentials)
-CLOUDFLARE_API_TOKEN = "gnE2fp1Knn9q_SgmWVj_QorIUv8aX74k3uebQlLE"
-ZONE_ID = "fd65f7d0eabc302e9b4c8f5a25fa5b84"  # Cloudflare Zone ID for your domain
-DOMAIN_NAME = "https://qsct-3d-adria.streamlit.app/"  # Your custom domain
-
-# DNS TXT record data (replace with your verification code)
-dns_record = {
-    "type": "TXT",
-    "name": "qsct-3d-adria.streamlit.app",
-    "content": "google-site-verification=cZ4kkFXL8xeyma7k5ZPPZytrlUCVB3gy-8blx1QLku4",  # Replace with your Google verification TXT value
-    "ttl": 120,
-    "proxied": False
-}
-
-# Cloudflare API URL to create the DNS TXT record
-url = f"https://api.cloudflare.com/client/v4/zones/{ZONE_ID}/dns_records"
-
-# Cloudflare API headers
-headers = {
-    "Authorization": f"Bearer {CLOUDFLARE_API_TOKEN}",
-    "Content-Type": "application/json"
-}
-
-# Send the request to Cloudflare API
-response = requests.post(url, json=dns_record, headers=headers)
-
-# Check response status
-if response.status_code == 200:
-    print("DNS TXT record added successfully!")
-else:
-    print(f"Failed to add DNS record: {response.status_code}")
-    print(response.text)
-
-
-logging.basicConfig(level=logging.INFO)
-
-@st.cache
-def load_data():
-    # Log some info
-    logging.info("Loading data...")
-    # Your data loading code here
-
-if __name__ == "__main__":
-    logging.info("Starting Streamlit app...")
-    st.title("My Streamlit App")
-    load_data()
