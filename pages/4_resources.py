@@ -1,9 +1,18 @@
 import streamlit as st
+from pathlib import Path
+from PIL import Image
+
+if "homepage.py" in locals():
+    current_dir = Path("homepage.py").parent
+else:
+    current_dir = Path.cwd()
 
 st.title("Data")
 st.write("Project is based on analysis and interpretation of offshore 2D seismic and well data. Seismic data represents the core of the interest since it gives the chance to understand halokinetic structures, faults, depositional surfaces and bodies in subsurface.")
 st.write("#")
-st.write("Many thanks to the Croatian Hydrocarbon Agency for supporting this research by providing the seismic and well data from Central and South Adriatic.")
+st.write("This project is supported by the Croatian Hydrocarbon Agency and TGS , who provided the seismic and well data from the central and southern Adriatic Sea.")
+img=Image.open(current_dir /"Images" / "azu.jpg")
+img=Image.open(current_dir /"Images" / "tgs.jpg")
 
 st.write("---")
 
