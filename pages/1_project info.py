@@ -8,8 +8,10 @@ st.set_page_config(page_title="About", layout="wide")
 st.title("QSCT-3D-ADRIA")
 st.write("#")
 
-st.write("The project is realized as part of the outgoing mobility scholarship of the Croatian Science Foundation (HRZZ), financially supported by the NextGenerationEU program.")
+st.write("The project is carried out within the Outgoing Mobility Scholarship of the Croatian Science Foundation (HRZZ), financially supported by the NextGenerationEU program.")
 st.write("[HRZZ link](https://hrzz.hr/financiranje/baza-projekata/?ID=15753#baza)")
+st.write("Science system information support:")
+st.write("[CroRIS](https://www.croris.hr/projekti/projekt/11828)")
 st.write("#")
 
 st.write("The project deals with stratigraphic-thermo-mechanical numerical modelling using the example of the Croatian part of the Adriatic foreland basin. The project includes the analysis of a sedimentary basin based on geological and geophysical data, where the object of research is determined by the study of Pliocene to Recent (5.3 - 0 million years) sediments in the central and southern Adriatic. The project is carried out in collaboration with the Geophysical Fluid Dynamics group of the Department of Earth Sciences at ETH Zürich.")
