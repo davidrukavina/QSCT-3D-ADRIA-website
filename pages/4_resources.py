@@ -7,8 +7,7 @@ if "homepage.py" in locals():
 else:
     current_dir = Path.cwd()
 
-img=Image.open(current_dir /"Images" / "azu.jpg")
-img2=Image.open(current_dir /"Images" / "tgs.jpg")
+img=Image.open(current_dir /"Images" / "azutgs.jpg")
 print(current_dir / "Images" / "azu.jpg")
 
 st.title("Data")
@@ -16,7 +15,7 @@ st.write("Project is based on analysis and interpretation of offshore 2D seismic
 st.write("#")
 st.write("This project is supported by the Croatian Hydrocarbon Agency and TGS , who provided the seismic and well data from the central and southern Adriatic Sea.")
 st.image(img)
-st.image(img2)
+
 
 
 st.write("---")
