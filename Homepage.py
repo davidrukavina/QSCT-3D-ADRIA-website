@@ -16,8 +16,7 @@ st.set_page_config(
     page_icon=":)"
 )
 
-st.title("QSCT-3D-ADRIA - site is under construction")
-st.sidebar.success("Select a page above.")
+
 
 if "homepage.py" in locals():
     current_dir = Path("homepage.py").parent
@@ -30,7 +29,28 @@ img=Image.open(current_dir /"Images" / "Layout_2.jpg")
 img2=Image.open(current_dir /"Images"/"Logo_ETH_UZ_RGN.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 img4=Image.open(current_dir/"Images"/"vis geopark.jpg")
+img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
 
+
+#---logo---
+
+st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
+st.html("""
+  <style>
+    [alt=Logo] {
+      height: 10rem;
+    }
+  </style>
+        """)
+st.write("---")
+
+#---title---
+
+
+st.title("QSCT-3D-ADRIA")
+
+
+st.sidebar.success("Select a page above.")
 
 #---suported by---
 st.write("---")
@@ -50,7 +70,7 @@ with image_column:
     st.image(img3)
 
 with text_column: 
-    st.subheader("Outgoing mobility program project")
+    st.subheader("Outgoing mobility program")
 
 st.title("Quantifying the links between Sedimentation, Climatic variations and Tectonics: 3D numerical modelling and comparison with observations from the Adriatic region")
 st.write("#")
@@ -67,7 +87,7 @@ with image_column:
 with text_column: 
     st.subheader("University of Zagreb, Faculty of Mining, Geology and Petroleum Engineering")
 
-    st.subheader("Geophysical Fluid Dynamics Group, Department of Earth Sciences at ETH Zürich")
+    st.subheader("Geophysical Fluid Dynamics Group, The Department of Earth and Planetary Sciences (D-EAPS), ETH Zürich")
 
 
 

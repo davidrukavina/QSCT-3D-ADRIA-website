@@ -17,27 +17,46 @@ img=Image.open(current_dir /"Images" / "Komiza.jpg")
 img1=Image.open(current_dir /"Images" / "Tectonic map.jpg")
 img2=Image.open(current_dir /"Images" / "Carboni P4.jpg")
 img3=Image.open(current_dir /"Images" / "Sealevels.jpg")
+img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
 
-st.title("Central and southern part of the Adritic foreland basin")
 
-st.write("Thrust belts bounded basin: to the west by the Apennine thrust belt and to the east by the Dinarides-Albanides thrust-belt. During the Cenozoic the development of the Alpine and Dinaric thrust belts provided a huge sediments influx in the basin and the deposition of thick clastic sequences.")
-st.write("The focus of the research is on the progradation of the Pliocene to Recent sedimentary succession towards the southern Adriatic foredeep. This succession is characterized by a vertical shoaling-up succession from Pliocene deep-water and shelf deposits to Pleistocene deltaic and nearshore strata, and continuous deep-water sedimentation in foredeep. Coastal deposition during the Late Pleistocene was characterized by aeolian and alluvial deposits driven by glacial processes in the Dinaric Mountains. From the Pliocene sedimentation is characterized by several superimposed processes: regional tectonic movements of the Adriatic plate between the shortening in the Dinaric Mountains and the Apennines, halokinectic deformation evidenced by diapir structures, local variations in basin subsidence and uplift, different systems of sediment routing and strong climatic variations. The main interest of this project is the interaction of these processes.")
+st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
+st.html("""
+  <style>
+    [alt=Logo] {
+      height: 10rem;
+    }
+  </style>
+        """)
 
-st.subheader("Interactive map:")
+st.subheader("Geological setting")
+
+st.write("Interactive map:")
 st.write("https://davidrukavina.github.io/QSCT-3D-ADRIA-map/")
 
+st.write("Study area is located in the central and southern part of the Adritic foreland basin bounded by the: Apennine thrust-belt to the west and Dinarides-Albanides thrust-belt to the east (Figure 1). During the Cenozoic the development of the Alpine and Dinaric thrust belts provided a huge sediments influx in the basin and the deposition of thick clastic sequences.")
+st.write("The focus of the research is on the progradation of the Pliocene to Recent sedimentary succession towards the southern Adriatic foredeep. This succession is characterized by a vertical shoaling-up succession from Pliocene deep-water and shelf deposits to Pleistocene deltaic and nearshore strata, and continuous deep-water sedimentation in foredeep. Coastal deposition during the Late Pleistocene was characterized by aeolian and alluvial deposits driven by glacial processes in the Dinaric Mountains. From the Pliocene sedimentation is characterized by several superimposed processes:")
+st.write("- regional tectonic movements of the Adriatic plate between the shortening in the Dinaric Mountains and the Apennines,")
+st.write("- halokinectic deformation evidenced by diapir structures (Figure 2 and 3),")
+st.write("- local variations in basin subsidence and uplift (Figure 3),")
+st.write("- different systems of sediment routing and (Figure 3)")
+st.write("- strong climatic variations (Figure 4).")
+st.write("Understanding the interaction of these processes it the main goal of this project.")
+
+
+
 st.image(img1)
-st.write("Tectonic map of the western Mediterranean with the most important Cenozoic structures (from Le Berton et al., 2017).")
+st.write("Figure 1: Tectonic map of the western Mediterranean with the most important Cenozoic structures (from Le Berton et al., 2017).")
 st.write("#")
 st.write("#")
 st.image(img)
-st.write("Geological map of the islands of Vis and Biševo, with a view of the bay of Komiža, which lies on the diapir structure.")
+st.write("Figure 2: Geological map of the islands of Vis and Biševo, with a view of the bay of Komiža, which lies on the diapir structure.")
 st.write("#")
 st.image(img2)
-st.write("Seismic section near the island of Palagruža presented with different attribute color bars (from Carboni et al., 2024). Here you can see examples of the diapir structure and the sediments in the subsurface.")
+st.write("Figure 3: Seismic section near the island of Palagruža presented with different attribute color bars (from Carboni et al., 2024). Here you can see examples of the diapir structure and the sediments in the subsurface.")
 st.write("#")
 st.image(img3)
-st.write("Sea levels from Hansen et al. (2013) compared with ice sheet model results of de Boer et al., (2010) in (b) and in (c) with sea-level analysis of Rohling et al., (2009).")
+st.write("Figure 4: Sea levels from Hansen et al. (2013) compared with ice sheet model results of de Boer et al., (2010) in (b) and in (c) with sea-level analysis of Rohling et al., (2009).")
 st.write("#")
 st.write("References:")
 st.write("Borović, I., Marinčić, S., Majcen, Ž., Rafaeli, P., Mamužić, P., Korolija, B., Jagačić, T., Brkić, M., Grimani, I. (1975): OSNOVNA GEOLOŠKA KARTA SFRJ, List VIS (JABUKA, SVETAC, BIŠEVO), INSTITUT ZA GEOLOŠKA ISTRAŽIVANJA ZAGREB, SAVEZNI GEOLOŠKI ZAVOD BEOGRAD)")

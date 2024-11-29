@@ -1,5 +1,24 @@
 from PIL import Image
 import streamlit as st
+from pathlib import Path
+
+
+if "homepage.py" in locals():
+    current_dir = Path("homepage.py").parent
+else:
+    current_dir = Path.cwd()
+
+img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
+
+st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
+st.html("""
+  <style>
+    [alt=Logo] {
+      height: 10rem;
+    }
+  </style>
+        """)
+
 
 st.title("Team")
 
