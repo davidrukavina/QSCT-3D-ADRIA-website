@@ -32,7 +32,7 @@ st.write("---")
 
 
 st.write("1.10.2024.")
-st.image(img3)
+st.write("Active X account")
 st.write("---")
 
 st.write("18.10.2024.")
