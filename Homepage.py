@@ -30,40 +30,19 @@ img2=Image.open(current_dir /"Images"/"Logo_ETH_UZ_RGN.jpg")
 img3=Image.open(current_dir /"Images"/"HRZZ-eng.jpg")
 img4=Image.open(current_dir/"Images"/"vis geopark.jpg")
 img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
+img6=Image.open(current_dir/"Images"/"x.jpg")
 
 
 #---logo---
 
-st.sidebar.image(img5, use_column_width=True)
-st.sidebar.markdown(
-    """
-    <style>
-    [alt="Logo"] {
-        height: 10rem;
-        cursor: pointer;
+st.logo(img5, icon_image=img5)
+st.html("""
+  <style>
+    [alt=Logo] {
+      height: 10rem;
     }
-    </style>
-    """, 
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    """
-    <script>
-    const logo = document.querySelector('[alt="Logo"]'); 
-    logo.addEventListener("click", function() {
-        const sidebar = document.querySelector('div[data-testid="stSidebar"]');
-        if (sidebar) {
-            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
-        }
-    });
-    </script>
-    """, 
-    unsafe_allow_html=True
-)
-
-st.sidebar.write("Click the logo to toggle the sidebar.")
-st.write("Main content here.")
+  </style>
+        """)
 
 
 #---title---

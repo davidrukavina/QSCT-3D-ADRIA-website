@@ -17,7 +17,7 @@ img3=Image.open(current_dir/"Images"/"x.jpg")
 img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
 
 
-st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
+st.logo(img5, icon_image=img5)
 st.html("""
   <style>
     [alt=Logo] {
@@ -34,19 +34,15 @@ st.write("---")
 st.write("1.10.2024.")
 
 # Path to the .jpg image (local or URL)
+st.write("X (former twitter) account active")
 image_path = "C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/x.jpg"  # Replace with your image URL or local path
-
-# HTML code for the image button
-html_button = f"""
-<a href="https://x.com/DaveRukavina" target="_blank">
-    <img src="{image_path}" alt="X account active" style="border: none; width: 400px; height: auto;">
-</a>
-"""
-
-# Display the button using st.markdown
-st.markdown(html_button, unsafe_allow_html=True)
-st.write("---")
-
+st.image(image_path, caption="Uploaded Logo", width=100)
+st.markdown(
+    f'<a href="https://x.com/DaveRukavina" target="_blank">'
+    f'<img src="{image_path}" alt="Logo" style="width:100px;height:100px;cursor:pointer;" />'
+    '</a>',
+    unsafe_allow_html=True
+)
 
 st.write("18.10.2024.")
 st.write("Geophysical Fluid Dynamics group photo")
