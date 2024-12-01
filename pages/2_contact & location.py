@@ -17,7 +17,7 @@ img3=Image.open(current_dir/"Images"/"UniZg.png")
 img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
 
 
-st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
+st.logo(img5, icon_image=img5)
 st.html("""
   <style>
     [alt=Logo] {

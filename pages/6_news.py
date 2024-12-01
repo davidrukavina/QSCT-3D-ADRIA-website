@@ -36,13 +36,8 @@ st.write("1.10.2024.")
 # Path to the .jpg image (local or URL)
 st.write("X (former twitter) account active")
 image_path = "C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/x.jpg"  # Replace with your image URL or local path
-st.image(image_path, caption="Uploaded Logo", width=100)
-st.markdown(
-    f'<a href="https://x.com/DaveRukavina" target="_blank">'
-    f'<img src="{image_path}" alt="Logo" style="width:100px;height:100px;cursor:pointer;" />'
-    '</a>',
-    unsafe_allow_html=True
-)
+st.image(image_path)
+st.write("[x account](https://x.com/DaveRukavina)")
 
 st.write("18.10.2024.")
 st.write("Geophysical Fluid Dynamics group photo")
