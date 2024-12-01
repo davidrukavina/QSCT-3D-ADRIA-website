@@ -34,15 +34,37 @@ img5=Image.open(current_dir/"Images"/"Project logocolor.jpg")
 
 #---logo---
 
-st.logo(img5, link="https://x.com/DaveRukavina", icon_image=img5)
-st.html("""
-  <style>
-    [alt=Logo] {
-      height: 10rem;
+st.sidebar.image(img5, use_column_width=True)
+st.sidebar.markdown(
+    """
+    <style>
+    [alt="Logo"] {
+        height: 10rem;
+        cursor: pointer;
     }
-  </style>
-        """)
-st.write("---")
+    </style>
+    """, 
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <script>
+    const logo = document.querySelector('[alt="Logo"]'); 
+    logo.addEventListener("click", function() {
+        const sidebar = document.querySelector('div[data-testid="stSidebar"]');
+        if (sidebar) {
+            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+        }
+    });
+    </script>
+    """, 
+    unsafe_allow_html=True
+)
+
+st.sidebar.write("Click the logo to toggle the sidebar.")
+st.write("Main content here.")
+
 
 #---title---
 
