@@ -35,9 +35,11 @@ st.write("1.10.2024.")
 
 # Path to the .jpg image (local or URL)
 st.write("X (former twitter) account active")
-image_path = "C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/x.jpg"  # Replace with your image URL or local path
-st.image(image_path)
-st.write("[x account](https://x.com/DaveRukavina)")
+st.image(img3)
+st.write("[X account](https://x.com/DaveRukavina)")
+st.write("---")
+
+
 
 st.write("18.10.2024.")
 st.write("Geophysical Fluid Dynamics group photo")
