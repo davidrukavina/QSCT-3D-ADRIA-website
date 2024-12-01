@@ -35,7 +35,7 @@ st.write("1.10.2024.")
 
 # Path to the .jpg image (local or URL)
 st.write("X (former twitter) account active")
-st.image(img3)
+
 st.write("[X account](https://x.com/DaveRukavina)")
 st.write("---")
 
