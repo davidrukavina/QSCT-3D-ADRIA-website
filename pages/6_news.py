@@ -32,14 +32,8 @@ st.write("---")
 
 
 st.write("1.10.2024.")
-
-# Path to the .jpg image (local or URL)
-st.write("X (former twitter) account active")
-
-st.write("[X account](https://x.com/DaveRukavina)")
+st.image(img3)
 st.write("---")
-
-
 
 st.write("18.10.2024.")
 st.write("Geophysical Fluid Dynamics group photo")
