@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import os
 
-video1 = open ("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/QSCT_video1.mp4", "rb")
+video1 = open ("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/QSCT_video_1.mp4", "rb")
 
 if "homepage.py" in locals():
     current_dir = Path("homepage.py").parent
@@ -54,7 +54,7 @@ st.image(img1)
 st.write("---")
 
 st.write("22.11.2024.")
-st.write("First successful modeling results")
+st.write("First successful modeling results. The video illustrates one of the modeled interactions between sediment supply, sea level change and tectonic subsidence. You can move the video player to speed up the sedimentation or go back in time.")
 st.video(video1)
 st.write("---")
 
