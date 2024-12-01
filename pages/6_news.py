@@ -28,22 +28,31 @@ if os.path.exists(img1_path):
 if os.path.exists(img2_path):
     img2 = Image.open(img2_path)
 
+if os.path.exists(img3_path):
+    img3 = Image.open(img3_path)
+
 # Display logo if img5 exists
 if img5:
     st.logo(img5, icon_image=img5)
+st.html("""
+  <style>
+    [alt=Logo] {
+      height: 10rem;
+    }
+  </style>
+        """)
 
+# ----News title---
 st.title("News")
 st.write("---")
 
-# Video display
-if os.path.exists(video1_path):
-    st.video(video1_path)  # Pass the video path directly
-else:
-    st.write("Video file is missing!")
+
 
 # Continue with other content
 st.write("1.10.2024.")
-st.write("Active X account")
+st.write("[Active X account](https://x.com/DaveRukavina)")
+if img3:
+    st.image(img3)
 st.write("---")
 
 st.write("18.10.2024.")
@@ -54,6 +63,17 @@ st.write("---")
 
 st.write("22.11.2024.")
 st.write("First successful modeling results.")
+
+# Video display: Convert Path object to string
+if os.path.exists(video1_path):
+    st.video(str(video1_path))  # Convert the pathlib.Path object to a string
+else:
+    st.write("Video file is missing!")
+st.write("---")
+
+
+st.write("29.11.2014.")
+st.write("pleased to announce a positive evaluation of the first period of the outgoing mobility scholarship of the Croatian Science Foundation.")
 if img2:
     st.image(img2)
 st.write("---")
