@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import os
 
-video1 = open("C:/Users/drukavina/Documents/QSCT-3D-ADRIA/Website/Webapp/Images/QSCT_video_1.mp4", "rb")
+video1 = open("Images/QSCT_video_1.mp4", "rb")
 
 if "homepage.py" in locals():
     current_dir = Path("homepage.py").parent
